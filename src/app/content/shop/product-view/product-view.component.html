@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <div class="row">
+            <div class="col-6">
+                <img src="{{selectedProduct?.image || 'http://via.placeholder.com/300'}}" class="img-thumbnail">
+            </div>
+            <div class="col-6" style="margin-top: 80px;">
+                <h2>{{ selectedProduct?.name }}</h2>
+                <p>{{ selectedProduct?.description || 'Product Description'}}</p>
+                <strong>{{ selectedProduct?.price || '$Price'}}</strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" style="text-align: center;">
+        <br>
+        <div>
+            <button type="button" class="btn btn-light btn-lg" routerLink="/shop" style="border-color: black;">Continue Shopping</button>
+        </div>
+    </div>
+</div>
